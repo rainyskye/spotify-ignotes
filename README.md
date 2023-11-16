@@ -2,7 +2,7 @@
 
 <h1 align="center">
   <br>
-  <a href="https://github.com/rainyskye/spotify-ignotes"><img src="https://picsum.photos/200/200?random=1" alt="spotify-ignotes Logo" width="200"></a>
+  <a href="https://github.com/rainyskye/spotify-ignotes"><img src="/assets/logo.webp" alt="spotify-ignotes Logo" width="200"></a>
   <br>
   spotify-ignotes
   <br>
