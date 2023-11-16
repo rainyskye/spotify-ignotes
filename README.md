@@ -2,7 +2,7 @@
 
 <h1 align="center">
   <br>
-  <a href="https://github.com/rainyskye/spotify-ignotes"><img src="https://raw.githubusercontent.com/rainyskye/spotify-ignotes/master/assets/logo.webp" alt="spotify-ignotes Logo" width="200"></a>
+  <a href="https://github.com/rainyskye/spotify-ignotes"><img src="https://www.imghost.net/ib/6LRbgpTSFQzs3Me_1700114587.webp" alt="spotify-ignotes Logo" width="200"></a>
   <br>
   spotify-ignotes
   <br>
@@ -24,7 +24,7 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://raw.githubusercontent.com/rainyskye/spotify-ignotes/assets/screenshot.jpg)
+![screenshot](https://www.imghost.net/ib/5WRemG8DngPAkDW_1700114588.jpg)
 
 ## How To Use
 
