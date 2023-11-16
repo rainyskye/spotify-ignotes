@@ -3,6 +3,7 @@ from instagrapi import Client
 from spotipy.oauth2 import SpotifyOAuth
 from dotenv import load_dotenv
 import os
+import time
 
 # Load from .env
 load_dotenv()
@@ -22,8 +23,6 @@ sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=CLIENT_ID,
                                                redirect_uri=REDIRECT_URI,
                                                scope="user-read-playback-state"))
 
-
-
 # Make sure it's not over 60 characters
 # Instagram may see a failed request for 60+ chars and get sus :3
 def check_string_length(input_string):
@@ -32,17 +31,39 @@ def check_string_length(input_string):
     else:
         print("eheheh, it's okay!! continuing :3")
 
-# Get currently playing track
-current_track = sp.current_playback()
+# Cut it off WOOOOOOOOO
+def truncate(s):
+    if len(s) > 20:
+        return s[:17] + "..."
+    else:
+        return s
 
-# Get current track info and set it as the users note
-if current_track is not None and 'item' in current_track:
-    track_name = current_track['item']['name']
-    artist_name = current_track['item']['artists'][0]['name']
-    content = (f"🎵 Playing: {track_name} by {artist_name}")
-    check_string_length(content)
-    note = cl.create_note(content, 0)
-    print(f"Set note to '{content}'")
-else:
-    print("No track is currently playing.")
+# Ensure it works the first time
+track_name = None
 
+while True:
+    # Get currently playing track
+    current_track = sp.current_playback()
+
+    # Get current track info and set it as the user's note if track_name changes
+    if current_track is not None and 'item' in current_track:
+        new_track_name = current_track['item']['name']
+
+        if new_track_name != track_name:
+            artist_name = current_track['item']['artists'][0]['name']
+            truncated_track_name = truncate(new_track_name)
+            truncated_artist_name = truncate(artist_name)
+            content = (f"🎵 Playing: {truncated_track_name} by {truncated_artist_name}")
+            check_string_length(content)
+            note = cl.create_note(content, 0)
+            print(f"Track Changed! Set note to '{content}'")
+
+            # Update track_name to the new_track_name
+            track_name = new_track_name
+        else:
+            print("Track not changed, sleeping for 10 seconds.")
+    else:
+        print("No track is currently playing.")
+
+    # Add a delay to avoid continuous API requests
+    time.sleep(10)  # Adjust the delay time as needed
