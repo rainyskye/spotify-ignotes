@@ -25,7 +25,7 @@
   <a href="#license">License</a>
 </p>
 
-![Screenshot](https://www.imghost.net/ib/5WRemG8DngPAkDW_1700114588.jpg)
+<img src="https://www.imghost.net/ib/5WRemG8DngPAkDW_1700114588.jpg" alt="Screenshot">
 
 ## How To Use
 
