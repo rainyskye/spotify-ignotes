@@ -29,7 +29,7 @@ def check_string_length(input_string):
     if len(input_string) > 60:
         raise ValueError("IT'S TOO FUCKING BIG YOU BUMBLING FORK")
     else:
-        print("eheheh, it's okay!! continuing :3")
+        print("Note is under 60 characters, weewoo!")
 
 # Cut it off WOOOOOOOOO
 def truncate(s):
@@ -61,7 +61,7 @@ while True:
             # Update track_name to the new_track_name
             track_name = new_track_name
         else:
-            print("Track not changed, sleeping for 10 seconds.")
+            print("Track not changed, sleeping for 10 seconds. shhhhh mimimi")
     else:
         print("No track is currently playing.")
 
