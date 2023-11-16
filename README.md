@@ -2,13 +2,14 @@
 
 <h1 align="center">
   <br>
-  <a href="https://github.com/rainyskye/spotify-ignotes"><img src="https://www.imghost.net/ib/6LRbgpTSFQzs3Me_1700114587.webp" alt="spotify-ignotes Logo" width="200"></a>
+  <a href="https://github.com/rainyskye/spotify-ignotes"><img src="https://picsum.photos/200/200?random=1" alt="spotify-ignotes Logo" width="200"></a>
   <br>
   spotify-ignotes
   <br>
 </h1>
+<h4 align="center">Placeholder image while I fix the actual embed :3</h4>
 
-<h4 align="center">Integrate Spotify "Now Playing" and Instagram Notes</h4>
+<h3 align="center">Integrate Spotify "Now Playing" and Instagram Notes</h4>
 
 <p align="center">
   <a href="https://github.com/sponsors/rainyskye">
