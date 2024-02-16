@@ -58,5 +58,6 @@ This project uses the following open source packages:
 
 GPLv3
 
-### If your computer explodes, steals your wife, replaces you in your job, or any other detrimental occours, it is not the responsibility of me or spotify-ignotes.
+### Warning
+If your computer explodes, steals your wife, replaces you in your job, or any other detrimental occours, it is not the responsibility of me or spotify-ignotes.
 ---
